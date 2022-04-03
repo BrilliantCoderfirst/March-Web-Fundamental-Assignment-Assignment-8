@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Assignment-8</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .nabvar {
+            width: 100%;
+            height: 77px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 2px 2px 9px #def5e1;
+        }
+
+        .log img {
+            width: 160px;
+            height: 65px;
+        }
+
+        .upper-opt {
+            display: flex;
+            list-style: none;
+            padding: 0px -2px;
+        }
+
+        .upper-opt li {
+            padding: 1px 8px;
+        }
+
+        .upper-opt a {
+            text-decoration: none;
+            color: #665f5f;
+            font-size: 18px;
+        }
+
+        .button-one button {
+            border: none;
+            padding: 13px 23px;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            background-color: #29b475;
+            border-radius: 8px;
+        }
+
+        .form-page {
+            padding-top: 30px;
+            align-items: center;
+        }
+
+        .had h1 {
+            font-size: 34px;
+            font-weight: 600;
+            padding-top: 20px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .had span {
+            color: #29b475;
+            padding-right: 6px;
+        }
+
+        form {
+            width: 835px;
+            margin: auto;
+            margin-top: 21px;
+            box-shadow: 0px 2px 12px #e2ebe5;
+            padding-left: 42px;
+            padding-top: 28px;
+            height: 600px;
+            margin-bottom: 42px;
+        }
+
+        label {
+            font-size: 18px;
+            color: rgb(63 59 59 / 87%);
+        }
+
+        input {
+            height: 48px;
+            width: 357px;
+            padding-left: 13px;
+            font-size: 14px;
+            border: none;
+            border: 1px solid #c5d2c5;
+            border-radius: 10px;
+            margin: 10px 0px;
+            margin-right: 41px;
+        }
+
+        .first,
+        .second,
+        .third,
+        .four {
+            display: flex;
+            padding-bottom: 18px;
+        }
+
+        .four {
+            padding: 0px;
+        }
+
+        #course {
+            width: 400px;
+        }
+
+        .checkbox-one {
+            padding-bottom: 41px;
+            padding-top: 17px;
+        }
+
+        .checkbox-one span {
+            color: #29b475;
+        }
+
+        #done {
+            width: 17px;
+            margin: 0px;
+            height: 18px;
+        }
+
+        .un {
+            padding-bottom: 10px;
+            font-size: 17px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nabvar">
+        <div class="log">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6GDWt7gTdw0hMZmuqOlACQBR60Ihp4eImg&usqp=CAU"
+                alt="Company Logo">
+        </div>
+        <div class="options">
+            <ul class="upper-opt">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <!-- <ul class="under-opt">
+                    <li><a href="#">Full Stact Web Development</a></li>
+                    <li><a href="#">Advanced Web Development</a></li>
+                    <li><a href="#">Career Kickstarter</a></li>
+                </ul> -->
+                <li><a href="#">Hire Geekster</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="button-one">
+            <button>Apply Now</button>
+        </div>
+    </div>
+
+
+    <div class="form-page">
+        <div class="had">
+            <h1><span>Application</span>Form</h1>
+        </div>
+        <div class="start-form">
+            <form action="#">
+
+                <div class="first">
+
+                    <div class="forcolum">
+                        <label for="fast">First Name* </label><br>
+                        <input type="text" id="fast" placeholder="Enter full name">
+                    </div>
+
+                    <div class="forcolum">
+                        <label for="email">Email* </label><br>
+                        <input type="email" id="email" placeholder="Enter email">
+                    </div>
+
+                </div>
+
+                <div class="second">
+
+                    <div class="forcolum">
+                        <label for="course">Select Course* </label><br>
+                        <input type="text" id="course" placeholder="Select course">
+                    </div>
+
+                </div>
+
+                <div class="third">
+
+                    <div class="forcolum">
+                        <label for="number">Phone* </label><br>
+                        <input type="number" id="number" placeholder="Enter mobile number">
+                    </div>
+
+
+                    <div class="forcolum">
+                        <label for="degree">Highest Degree* </label><br>
+                        <input type="text" id="degree" placeholder="Select highest degree">
+
+                    </div>
+
+                </div>
+
+                <div class="four">
+
+                    <div class="forcolum">
+                        <label for="completion">Year of Completion* </label><br>
+                        <input type="text" id="completion" placeholder="Select year of completion">
+                    </div>
+
+                    <div class="forcolum">
+                        <label for="skills">Programming Skills* </label><br>
+                        <input type="text" id="skills" placeholder="Select programming skill level">
+                    </div>
+
+                </div>
+
+                <div class="checkbox-one">
+                    <input type="checkbox" name="box-level" id="done">
+                    <label for="done" class="un">By signing up, you agree to the <span> Terms and Conditions </span> of
+                        Geekster (QuantumBit
+                        technologies Pvt. Ltd)*.</label>
+                </div>
+
+                <div class="button-one button-another">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
